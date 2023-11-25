@@ -1,0 +1,202 @@
+CPU Bound Operations
+	L1, L2, L3 Cache
+	RAM
+
+IO Bound Operations
+	Disk Operations
+	Netword Operations
+
+Notations - 
+
+	1) All variable names must be declared using camel casing
+	2) All function names must be declared using camel casing
+	3) All the function as class must be declared using Capital Camel Casing
+	4) All objects must be declared using Capital Camel Casing
+	5) Constants must be declared using all capital casing
+
+var Customer={
+	customerId:2892,
+	contactName:'Pravinkumar R. D.',
+	city:'Pune'
+}
+
+https://codepen.io/pravinkumarcode/pen/zYLZwep
+
+
+
+
+this key word in JavaScript
+
+	When you write a function with function keyword, it has implicit binding with this keyword
+
+When you write arrow functions, arrow function does not have implicit binding with this keyword
+
+
+const Mobiles=["Apple 6","Samsung Galaxy","Nokia 6"];
+
+let mobile1=Mobiles[0];
+
+Destructuring - Array, Object
+Object Literals
+Extension methods of Number, String, Array, Object
+
+Object Oriented Programming
+
+	SOLID Principles
+
+	1) Abstraction
+	2) Encapsulation [Hiding implementation - ]	
+		Access Modifiers - [Private/Public/Protected]
+			Private #_
+			
+	3) Inheritance - [Reusability]
+			[Relationships - IS-A]
+			[Generalization-To-Specialization]
+	4) Polymorphism - 
+		Overloading
+		Overriding
+
+SOA- 
+
+interface IPhy{}
+interface IChe{}
+interface IBio{}
+class Science implements IPhy,IChe,IBio{
+
+	phy()
+	che()
+	bio()
+}
+
+IPhy obj=new Science()
+
+PO System - Customer/Order/OrderDetail/Category/Product/Invoice/Supplier/Shipper/Employee
+
+CRUD
+
+Generics/Template Classes
+
+class CrudOp<T>{
+	getAll():T[]{
+
+	};
+	getDetails(id):T{
+
+	}
+	insert(item:T){
+
+	}
+}
+
+
+ECMAScript - Duck Typing
+
+function Insert(person){
+	person.firstName="";
+	person.lastName="";
+}
+
+Insert(employee)
+Insert(customer)
+Insert(supplier)
+
+Constructors - 
+	1) Calling of the constructor happens from Bottom To Top [Drived Class - To - Parent Class]
+	2) Execution of the constructor happends from Top-To-Bottom
+
+
+Locales Example - 
+
+'hi-IN', 'kn-IN', 'gu-IN', 'mr-IN'
+'ja-JP', 'es-ES', 'de-DE', 'fr-FR', 'ar-KW'
+
+
+Blocking Operation [Disk Operations]
+
+1) Check if directory exist [If yes, use it]
+2) Or Create new Directory
+3) Create new file
+4) Write the contents in file
+5) Read the contents to design the report
+
+
+
+To get rid off Callback hell, we can use async/await functions
+
+
+How to Perform AJAX calls?
+
+	HTTP Calls - JavaScript
+		1) XmlHttpRequest API
+		2) fetch() API
+			Example - 
+
+				const posts = await(fetch('https://jsonplaceholder.typicode.com/posts') 
+					= Promise<Response> => json() =>Promise<>
+						
+		
+	Perform CRUD operations using HTTP - 
+		Get/Post/Put/Delete/Patch/Merge/Head/
+
+What is JavaScript Module?
+1) Avoid global scope pollution
+2) Avoid exporting the functionality which you want to be used internally
+3) Loading modules exactly once
+4) Eager Loading and Lazy Loading
+5) Singleton pattern
+
+import and export
+
+
+Diiferent JavaScript Module Patterns - 
+	1) CJS - CommonJS Module Pattern [Node JS]
+		module.exports={
+			addition:function(){}
+		}
+			
+	2) AMD - Asynchronous Module Definition
+		define(...)
+	3) UMD - Universal Module Definition
+		(function(){
+
+		}())
+	4) ESM - ECMAScript Module [Angular/React JS/Vue JS/...]
+		import and export 
+
+
+3-Working Steps of Module
+	1) Module Resolution [Top-To-Bottom] [Browsers/Webpack/SystemJS/Require()/...]
+	2) Module Loading [Bottom-To-Top]
+	3) Module Execution [Whenever the module is loaded]
+There are different ways you can use to import and export the contents of the module - 
+
+	1) Export - 
+		i) Default export [Only one default export - Module has one and only one functionality]
+			Default export allows lazy loading of single module along with interoprability with other module systems like UMD
+		ii) Named Export [As many named exports as you want]
+		iii) Re-exporting functionalities
+	2) Import - 
+		i) import required functions only
+		ii) Import all - import * as object from 'module'
+
+JavaScript Bundling system
+	Webpack - JavaScript Bundling system
+
+
+
+SDLC - 
+
+	Product Owner <=> Business Analyst =>Architect =>Development <=> Q.A./Testing => Deployment/Production
+
+
+
+Iterator - is an Object [Symbol.Iterator]
+
+Generator Function
+
+
+
+
+
+
+
